@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./javascript.js"></script>
+
+</head>
+
+<body>
+  <div class="card">
+    <form id="locationForm" class="flex-row">
+      <input id='cityField' type='text' maxlength='25' placeholder="Enter City">
+      <button id='getWeather' type='button'><p>Get Weather</p></button>
+    </form>
+    <div id = "weatherConditions" class = "flex-row">
+      <div id="weatherIcon"></div>
+      <p id="conditions">--</p>
+    </div>
+    <div id = "windTemp" class="flex-row">
+      <div id="temperature" class="flex-row">
+        <span id="temperatureF"><p>-- F</p></span>
+        <span id="temperatureC"><p>-- C</p></span>
+      </div>
+      <div id="windSpeed" class="flex-row">
+        <span><p id="windSpeedImperial">-- MPH</p></span>
+        <span><p id="windSpeedMetric">-- m/s</p></span>
+      </div>
+      <button type="button" id="changeUnits"><p>Change Units</p></button>
+    </div>
+  </div>
+
+</body>
+
+</html>

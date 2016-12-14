@@ -1,0 +1,102 @@
+body{
+  height: 100%;
+  background-color: #d3d3d3;
+  font-family: Verdana, Sans Serif;
+}
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+p {
+  color: white;
+	font-family: 'Verdana';
+  font-size: 1.2em;
+	line-height: 1.5;
+	letter-spacing: 0.025em;
+	margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 500px;
+  height: 200px;
+	margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  background-color: #9B59B6;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#locationForm {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  display:block;
+  height: 45px;
+  width: 60%;
+	margin: 0;
+	padding: 0;
+	font: 400 1em 'Verdana';
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	color: white;
+	border: none;
+	border-bottom: solid thin white;
+  background: transparent;
+}
+input:focus {
+  outline: none;
+}
+#getWeather {
+  display:block;
+  border: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: #9B59B6;
+}
+#getWeather:hover {
+  background-color:#8E44AD
+}
+
+#conditions{
+    text-transform:capitalize;
+}
+
+#windTemp{
+  justify-content: center;
+  width: 100%;
+}
+#windSpeed, #temperature{
+  margin: 10px;
+}
+
+#changeUnits{
+  display:block;
+  border: none;
+  margin: 0;
+  justify-self: flex-end;
+  background-color: #9B59B6;
+}
+#changeUnits:hover {
+  background-color:#8E44AD
+}
